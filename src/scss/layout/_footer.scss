@@ -1,0 +1,172 @@
+@import "../utils/variables";
+
+.footer-main {
+    background-image: url("https://themesflat.co/html/homzen/images/banner/banner-footer.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: fit-content;
+    background-color: #141B29;
+    padding: 0 7%;
+
+    .footer-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 3% 0;
+        border-bottom: 1px solid rgb(74, 74, 74);
+
+        .footer-top-right {
+            display: flex;
+            gap: 10px;
+            color: white;
+            align-items: center;
+
+            div {
+                width: 42px;
+                background-color: #2C323F;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                border-radius: 50%;
+
+                
+            }
+         
+
+
+
+
+        }
+
+        img {
+            width: 170px;
+        }
+
+    }
+}
+
+.footer-mid {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0;
+
+    .row:nth-child(1) ul {
+        li {
+            color: white;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: white;
+
+
+        p {
+            color: white;
+        }
+
+        .row-text {
+            color: gray;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                list-style-type: none;
+                display: flex;
+                gap: 10px;
+                color: rgb(169, 168, 168);
+                cursor: pointer;
+
+                p {
+                    transition: 300ms;
+                    color: rgb(169, 168, 168);
+                }
+
+                &:hover p {
+                    color: $main-color;
+                }
+
+                &:hover .expand::after {
+                    transform: scaleX(1);
+                    transform-origin: 0 50%;
+                }
+
+                i {
+                    color: gray;
+
+
+                }
+
+            }
+        }
+
+
+    }
+}
+
+
+.news-letter-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    p {
+        color: white;
+    }
+
+    span {
+        color: gray;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        color: gray;
+        font-size: large;
+        outline: none;
+        height: 40px;
+        width: 300px;
+    }
+
+    .input-div {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid gray;
+        justify-content: space-between;
+
+
+    }
+
+    i {
+
+        color: gray;
+
+
+    }
+
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+    border-top: 1px solid rgb(74, 74, 74);
+    ;
+
+    div {
+        display: flex;
+        justify-content: center;
+        color: gray;
+        gap: 10px;
+        font-size: small;
+
+    }
+}

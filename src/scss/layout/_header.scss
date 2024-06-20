@@ -1,0 +1,181 @@
+@import "../utils/variables";
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid $border-color;
+    height: fit-content;
+    padding: 1% 2%;
+    font-weight: 600;
+
+    .header-left-div {
+        width: 20%;
+    }
+
+    img {
+        width: 174px;
+        cursor:pointer;
+    }
+
+    .header-center-div {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .header-right-div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a{
+                transition: 100ms;
+            }
+            a:hover{
+                color: red;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            background-color: $main-color;
+            border: none;
+            padding: 17px 23px;
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: medium;
+            transition: 300ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(188, 2, 2);
+            }
+        }
+
+      
+    }
+}
+
+.dropbtn-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px 0px;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &:hover .expand::after {
+        transform: scaleX(1);
+        transform-origin: 0 50%;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 300ms;
+    padding: 0;
+}
+
+.dropdown-content {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid $border-color;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+    a {
+        border-top: 1px solid $border-color;
+        color: gray;
+        padding: 20px 70px 20px 20px;
+        text-decoration: none;
+        display: flex;
+        gap: 5px;
+        white-space: nowrap;
+        transition: 300ms;
+
+        p {
+            transform: translateX(-20px);
+            transition: 400ms;
+            font-weight: 600;
+        }
+
+        &:hover p {
+            color: red;
+            transform: translateX(0px);
+
+        }
+
+        &:hover i {
+            opacity: 100%;
+            transition: 1000ms;
+        }
+
+        i {
+            transform: rotate(135deg);
+            color: $main-color;
+            opacity: 0;
+
+        }
+
+        &:hover {
+            background-color: #f1f1f1
+        }
+    }
+}
+
+
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.expand {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.expand:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px $main-color;
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: 100% 50%
+}
