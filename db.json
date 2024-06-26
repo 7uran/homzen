@@ -1,105 +1,76 @@
 {
-    "cards": [
-        {
-            "name": "Dallas",
-            "properties": 263,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-            "id": "bee2"
-        },
-        {
-            "name": "Atlanta",
-            "properties": 275,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-2.jpg",
-            "id": "36b0"
-        },
-        {
-            "name": "Orlando",
-            "properties": 256,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-3.jpg",
-            "id": "90b0"
-        },
-        {
-            "name": "Miami",
-            "properties": 312,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-4.jpg",
-            "id": "4ae1"
-        },
-        {
-            "name": "Houston",
-            "properties": 256,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-5.jpg",
-            "id": "82b9"
-        },
-        {
-            "name": "Phoenix",
-            "properties": 221,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-6.jpg",
-            "id": "7f8e"
-        },
-        {
-            "name": "Seattle",
-            "properties": 188,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-7.jpg",
-            "id": "07fe"
-        },
-        {
-            "name": "Denver",
-            "properties": 193,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-8.jpg",
-            "id": "12d4"
-        },
-        {
-            "name": "Austin",
-            "properties": 309,
-            "image": "https://themesflat.co/html/homzen/images/location/lo-sm-9.jpg",
-            "id": "b0aa"
-        }
-    ],
-    "houses": [
-        {
-            "name": "Casa Lomas De Machalí Machas",
-            "location": "33 Maple Street, San Francisco, California",
-            "houseImg": "https://themesflat.co/html/homzen/images/home/house-1.jpg",
-            "type": "studio",
-            "price": 7250,
-            "priceType": "SqFT",
-            "bed": 3,
-            "bath": 2,
-            "size": 600,
-            "user": {
-                "name": "Arlene McCoy",
-                "photo": "https://themesflat.co/html/homzen/images/avatar/avt-6.jpg"
-            }
-        },
-        {
-            "name": "Casa Lomas De Machalí Machas",
-            "location": "33 Maple Street, San Francisco, California",
-            "houseImg": "https://themesflat.co/html/homzen/images/home/house-2.jpg",
-            "type": "studio",
-            "price": 7250,
-            "priceType": "SqFT",
-            "bed": 3,
-            "bath": 2,
-            "size": 600,
-            "user": {
-                "name": "Arlene McCoy",
-                "photo": "https://themesflat.co/html/homzen/images/avatar/avt-5.jpg"
-            }
-        },
-        {
-            "name": "Casa Lomas De Machalí Machas",
-            "location": "33 Maple Street, San Francisco, California",
-            "houseImg": "https://themesflat.co/html/homzen/images/home/house-3.jpg",
-            "type": "studio",
-            "price": 7250,
-            "priceType": "SqFT",
-            "bed": 3,
-            "bath": 2,
-            "size": 600,
-            "user": {
-                "name": "Turan",
-                "photo": "https://themesflat.co/html/homzen/images/avatar/avt-7.jpg"
-            }
-        }
-    ]
+  "cards": [
+    {
+      "name": "Dallas",
+      "properties": 263,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
+      "id": "bee2"
+    },
+    {
+      "name": "Atlanta",
+      "properties": 275,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-2.jpg",
+      "id": "36b0"
+    },
+    {
+      "name": "Orlando",
+      "properties": 256,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-3.jpg",
+      "id": "90b0"
+    },
+    {
+      "name": "Miami",
+      "properties": 312,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-4.jpg",
+      "id": "4ae1"
+    },
+    {
+      "name": "Houston",
+      "properties": 256,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-5.jpg",
+      "id": "82b9"
+    },
+    {
+      "name": "Phoenix",
+      "properties": 221,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-6.jpg",
+      "id": "7f8e"
+    },
+    {
+      "name": "Seattle",
+      "properties": 188,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-7.jpg",
+      "id": "07fe"
+    },
+    {
+      "name": "Denver",
+      "properties": 193,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-8.jpg",
+      "id": "12d4"
+    },
+    {
+      "name": "Austin",
+      "properties": 309,
+      "image": "https://themesflat.co/html/homzen/images/location/lo-sm-9.jpg",
+      "id": "b0aa"
+    }
+  ],
+  "houses": [
+    {
+      "id": "bdeb",
+      "name": "test",
+      "location": "test",
+      "houseImg": "https://themesflat.co/html/homzen/images/home/house-5.jpg",
+      "type": "Villa",
+      "price": "1",
+      "priceType": "SqFT",
+      "bed": "1",
+      "bath": "1",
+      "size": "1",
+      "user": {
+        "name": "1",
+        "photo": "https://themesflat.co/html/homzen/images/avatar/avt-6.jpg"
+      }
+    }
+  ]
 }

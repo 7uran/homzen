@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.querySelectorAll(".team-card").forEach((el) => {
     el.addEventListener("mouseover", () => {
-        console.log(el);
+
         el.querySelector(".social-media").style.transform = "translateY(-50%)"
         el.querySelector(".social-media").style.opacity = "100"
         el.querySelector(".contact").style.backgroundColor = "#EC2126"
@@ -89,6 +89,12 @@ fetch('http://localhost:8000/cards')
             container.appendChild(cardDiv);
         });
     })
+function deleteData(id) {
+    fetch(`http://localhost:8000/houses/${id}`, {
+        method: "DELETE"
+    }).then(response => response.json()).then(data => console.log(data))
+    location.reload()
+}
 
 
 fetch('http://localhost:8000/houses')
@@ -118,6 +124,7 @@ fetch('http://localhost:8000/houses')
                                 <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
                                 <button><i class="fa-regular fa-heart"></i></button>
                                 <button><i class="fa-regular fa-eye"></i></button>
+                                <button class="deleteBtn"><i class="fa-solid fa-trash"></i></button>
                             </div>
 
                         </div>
@@ -162,5 +169,30 @@ fetch('http://localhost:8000/houses')
                 </div>
                     `;
             container.appendChild(cardDiv);
+
+            const deleteBtn = cardDiv.querySelector('.deleteBtn');
+            deleteBtn.addEventListener("click", () => {
+                deleteData(card.id)
+            })
         });
     })
+
+
+
+window.addEventListener('scroll', function () {
+    var scrollTop = window.scrollY; // Sayfanın yukarısından olan kaydırma mesafesi
+    var documentHeight = document.documentElement.scrollHeight; // Dokümanın toplam yüksekliği
+    var windowHeight = window.innerHeight; // Pencerenin yüksekliği
+    var scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+    var progress = document.querySelector(".progress")
+    progress.style.background = `conic-gradient(#EC2126 ${scrollPercentage * 3.6}deg, #ededed 0deg)`
+    progress.style.transform = "translateY(0)"
+    progress.style.opacity = "100"
+    if (scrollPercentage < 2) {
+        progress.style.transform = "translateY(80px)"
+        progress.style.opacity = "0"
+    }
+});
+document.querySelector(".progress").addEventListener("click", () =>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+})
